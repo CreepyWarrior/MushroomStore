@@ -12,20 +12,23 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
+.App
 
+nav {
+  background-color: #ffabab;
+  color: #ff0000;
+  padding: 10px;
+}
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-image: url(imagenes/FondoPagina.jpg);
+  background-size: cover; /* Esto hará que la imagen se ajuste a la pantalla */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  background-position: center; /* Centra la imagen en el header */
+  height: 100vh; /* Ajusta la altura del header al 100% de la altura de la ventana */
 }
 
 .App-link {
-  color: #61dafb;
+  color: #8dffa0;
 }
 
 @keyframes App-logo-spin {
@@ -35,4 +38,92 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.texto{
+  font-size:30px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-justify: auto;
+  color: white;
+}
+
+/* Contenedor de la columna */
+.col-6 {
+  padding: 15px;
+}
+
+/* Tarjeta */
+.card {
+  background-color: rgba(0, 0, 0, 0.425);
+  width: auto;
+  max-width: 50rem;
+  margin-top: 10px;
+}
+
+.card-subtitle{
+  margin-bottom: 10px;
+}
+
+/* Título de la tarjeta */
+.card-title {
+  color: white;
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+/* Cuerpo de la tarjeta */
+.card-body {
+  padding: 40px;
+
+}
+
+/* Formulario dentro de la tarjeta */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Etiquetas de los inputs */
+.form-label {
+  color: white;
+  font-size: 1.2rem;
+}
+
+/* Inputs */
+.form-control {
+  background-color: #212529;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  color: white;
+  font-size: 1.2rem;
+}
+
+/* Botón de envío */
+.btn-primary {
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+/* Texto de registro */
+.text-center {
+  color: white;
+  font-size: 1.2rem;
+}
+
+/* Enlace de registro */
+.text-center a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.col-md-3 {
+  margin-left: 100px;
+  margin-right: 10px;
 }
